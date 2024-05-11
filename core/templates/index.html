@@ -1,17 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>PhotoFolio Bootstrap Template - Services</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Fostering Innovation: Cultivating a Culture of Creativity in Management</title>
+  <meta name="description" content="Innovation serves as the cornerstone of thriving organizations, fueling their growth and sustainability. However, cultivating a culture of creativity within management structures rem">
+  <meta name="keywords" content="Fostering Innovation">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Fostering Innovation">
+  <meta property="og:description" content="Fostering Innovation: Cultivating a Culture of Creativity in Management">
+  <meta property="og:image" content="https://imarticle.pythonanywhere.com/static/assets/img/apple-touch-icon.png">
+  <meta property="og:url" content="https://imarticle.pythonanywhere.com/">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,14 +23,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: PhotoFolio
@@ -43,44 +47,25 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <a href="{% url 'article:home' %}" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <i class="bi bi-camera"></i>
-        <h1>PhotoFolio</h1>
+        <!-- <img src="{% static 'img/logo.png' %}" alt=""> -->
+        <i class="bi bi-info-circle"></i>
+        <h1>Management</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="gallery.html">Nature</a></li>
-              <li><a href="gallery.html">People</a></li>
-              <li><a href="gallery.html">Architecture</a></li>
-              <li><a href="gallery.html">Animals</a></li>
-              <li><a href="gallery.html">Sports</a></li>
-              <li><a href="gallery.html">Travel</a></li>
-              <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Sub Menu 1</a></li>
-                  <li><a href="#">Sub Menu 2</a></li>
-                  <li><a href="#">Sub Menu 3</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">article</a></li>
+          <li><a href="#author">Author</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://amirhamidi.pythonanywhere.com/" class="website"><i class="bi bi-person-fill"></i></a>
+        <a href="https://twitter.com/Amirhamidi2001/" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/amir-hamidi-18a815233/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -95,10 +80,10 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>Services</h2>
-            <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+            <h2>Fostering Innovation: Cultivating a Culture of Creativity in Management</h2>
+            <p>Abstract: Innovation serves as the cornerstone of thriving organizations, fueling their growth and sustainability. However, cultivating a culture of creativity within management structures remains a complex and dynamic challenge. This article delves into the nuanced strategies managers can employ to establish an environment that not only fosters innovation but also nurtures it as a core organizational value.</p>
 
-            <a class="cta-btn" href="contact.html">Available for hire</a>
+            <a class="cta-btn" href="#contact">Available for hire</a>
 
           </div>
         </div>
@@ -113,33 +98,41 @@
 
           <div class="col-xl-3 col-md-6 d-flex">
             <div class="service-item position-relative">
-              <i class="bi bi-activity"></i>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <i class="bi bi-lightbulb"></i>
+              <h4><a href="#introduction" class="stretched-link">Introduction</a></h4>
+              <p>Fostering Innovation: Cultivating a Culture of Creativity in Management</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex">
             <div class="service-item position-relative">
-              <i class="bi bi-bounding-box-circles"></i>
-              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <i class="bi bi-sort-up"></i>
+              <h4><a href="#experimentation" class="stretched-link">Experimentation</a></h4>
+              <p>Creating an Environment for Experimentation</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex">
             <div class="service-item position-relative">
-              <i class="bi bi-calendar4-week"></i>
-              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <i class="bi bi-book"></i>
+              <h4><a href="#learning" class="stretched-link">Learning Opportunity</a></h4>
+              <p>Embracing Failure as a Learning Opportunity</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex">
             <div class="service-item position-relative">
-              <i class="bi bi-broadcast"></i>
-              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <i class="bi bi-speedometer2"></i>
+              <h4><a href="#empowering" class="stretched-link">Empowering</a></h4>
+              <p>Empowering Employees to Think Outside the Box</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-card-text"></i>
+              <h4><a href="#conclusion" class="stretched-link">Conclusion</a></h4>
+              <p>Continuous journey that requires ongoing commitment and effort</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -148,69 +141,251 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
+    <!-- ======= Introduction Section ======= -->
+    <section id="introduction" class="pricing">
       <div class="container">
 
         <div class="section-header">
-          <h2>Prices</h2>
-          <p>Check my adorable pricing</p>
+          <h2>Introduction</h2>
+          <p>Fostering Innovation: Cultivating a Culture of Creativity in Management</p>
         </div>
 
         <div class="row gy-4 gx-lg-5">
 
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Portrait Photography</h3>
-              <h4>$160.00</h4>
+              <p>In today's rapidly evolving business landscape, organizations must continually innovate to stay competitive. However, innovation is not solely the result of individual brilliance; it thrives in environments that prioritize creativity, experimentation, and collaboration. As such, managers play a pivotal role in shaping organizational culture to facilitate innovation. By fostering a culture that encourages and rewards creative thinking, managers can unleash the full potential of their teams and drive sustained success.</p>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Fashion Photography</h3>
-              <h4>$300.00</h4>
+              <p>Expanding on this, it's crucial to recognize that innovation is no longer a luxury but a necessity for businesses to thrive in the modern marketplace. With technological advancements and changing consumer preferences, organizations must constantly adapt and innovate to stay relevant. However, fostering a culture of innovation requires more than just implementing the latest tools or techniques; it requires a fundamental shift in mindset and organizational practices.</p>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Sports Photography</h3>
-              <h4>$200.00</h4>
+              <p>Managers serve as the catalyst for this transformation. They are responsible for setting the tone, establishing clear expectations, and providing the necessary support for innovation to flourish within their teams. This involves creating an environment where employees feel empowered to take risks, share ideas openly, and challenge the status quo. Additionally, managers must lead by example, demonstrating their commitment to innovation through their actions and decision-making processes.</p>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Still Life Photography</h3>
-              <h4>$120.00</h4>
+              <p>Furthermore, effective managers understand that innovation is a collaborative effort that involves input from individuals across all levels of the organization. By fostering cross-functional collaboration and breaking down silos, managers can harness the diverse perspectives and expertise within their teams to drive meaningful innovation. Additionally, they must create mechanisms for capturing and implementing innovative ideas, ensuring that creativity translates into tangible outcomes that benefit the organization.</p>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Wedding Photography</h3>
-              <h4>$500.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Photojournalism</h3>
-              <h4>$200.00</h4>
+              <p>In summary, managers play a critical role in fostering a culture of innovation within their organizations. By prioritizing creativity, experimentation, and collaboration, they can create an environment where innovation thrives, ultimately driving sustained success in today's dynamic business landscape.</p>
             </div>
           </div><!-- End Pricing Item -->
 
         </div>
-    </section><!-- End Pricing Section -->
+    </section><!-- End Introduction Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- ======= Experimentation Section ======= -->
+    <section id="experimentation" class="pricing">
       <div class="container">
 
         <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>What they are saying</p>
+          <h2>Experimentation</h2>
+          <p>Creating an Environment for Experimentation</p>
+        </div>
+
+        <div class="row gy-4 gx-lg-5">
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>One of the key ingredients in fostering innovation is creating an environment where experimentation is not only allowed but actively encouraged. Managers can achieve this by providing resources, such as time, budget, and support, for employees to explore new ideas and approaches.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Expanding on this, it's important for managers to recognize that experimentation inherently involves a degree of risk-taking. Employees need to feel supported and empowered to try new things without fear of failure or repercussion. This requires cultivating a culture that views failures not as setbacks but as valuable learning experiences that contribute to growth and innovation.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>To facilitate experimentation, managers can establish dedicated spaces or platforms for brainstorming and prototyping. These could range from physical innovation labs to virtual collaboration tools, depending on the nature of the organization and its work environment. These spaces serve as safe havens where employees can freely explore and test their ideas without constraints.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Moreover, managers should actively encourage a mindset of curiosity and exploration among their teams. This involves challenging assumptions, asking probing questions, and seeking out new perspectives. By fostering a culture of continuous learning and improvement, managers can inspire their employees to push the boundaries of what's possible and discover innovative solutions to complex challenges.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Additionally, managers should lead by example by embracing experimentation in their own work and decision-making processes. This demonstrates to employees that taking calculated risks and trying new things is not only acceptable but valued within the organization.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Ultimately, creating an environment for experimentation requires a combination of resources, support, and cultural norms that empower employees to innovate fearlessly. By embracing experimentation as a core value, organizations can unlock new possibilities and drive breakthrough innovations that propel them ahead of the competition.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+    </section><!-- End Experimentation Section -->
+
+    <!-- ======= Learning Opportunity Section ======= -->
+    <section id="learning" class="pricing">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Learning Opportunity</h2>
+          <p>Embracing Failure as a Learning Opportunity</p>
+        </div>
+
+        <div class="row gy-4 gx-lg-5">
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Innovation inherently involves risk, and with risk comes the possibility of failure. However, rather than viewing failure as a setback, effective managers recognize it as a valuable learning opportunity. By destigmatizing failure and reframing it as a natural part of the innovation process, managers can create a culture where employees feel empowered to take calculated risks and push boundaries.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Expanding on this, it's important for managers to understand that failure is not inherently negative; it's an inevitable aspect of exploring uncharted territory and pushing the limits of what's possible. When employees are encouraged to step outside their comfort zones and try new things, some level of failure is bound to occur. Instead of viewing failure as a reflection of incompetence or inadequacy, managers should encourage their teams to extract lessons from these experiences and use them to inform future efforts.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Encouraging open dialogue about both successes and failures is crucial in fostering a culture of transparency and continuous improvement. This involves creating spaces where employees feel comfortable sharing their experiences, insights, and lessons learned without fear of judgment or reprisal. By normalizing conversations around failure, managers can help alleviate the stigma associated with it and promote a growth mindset within the organization.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Moreover, managers should lead by example by openly acknowledging their own failures and demonstrating how they've used these experiences to grow and improve. This not only humanizes managers but also reinforces the idea that failure is an integral part of the learning process.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Additionally, managers can implement mechanisms for capturing and sharing lessons learned from failure across the organization. This could involve conducting post-mortem analyses, hosting knowledge-sharing sessions, or creating repositories of best practices and case studies. By institutionalizing a process for learning from failure, managers can ensure that valuable insights are not lost but instead contribute to the organization's collective knowledge and resilience.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Ultimately, by embracing failure as a learning opportunity, managers can create an environment where employees feel empowered to take risks, innovate boldly, and drive meaningful change. This shift in mindset not only fosters a culture of resilience and adaptability but also fuels continuous innovation and growth within the organization.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+    </section><!-- End Learning Opportunity Section -->
+
+    <!-- ======= Empowering Section ======= -->
+    <section id="empowering" class="pricing">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Empowering</h2>
+          <p>Empowering Employees to Think Outside the Box</p>
+        </div>
+
+        <div class="row gy-4 gx-lg-5">
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>To truly foster innovation, managers must empower employees to think creatively and challenge the status quo. This requires fostering a culture of psychological safety, where employees feel comfortable expressing their ideas and taking calculated risks without fear of judgment or reprisal.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Expanding on this, it's crucial for managers to create an environment where employees feel valued, respected, and supported in their efforts to innovate. This involves establishing clear communication channels, actively listening to employees' ideas and concerns, and providing constructive feedback that encourages growth and experimentation. When employees feel that their contributions are valued and that their voices are heard, they are more likely to feel empowered to think outside the box and share their innovative ideas with confidence.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Additionally, providing opportunities for skill development and cross-functional collaboration can help employees broaden their perspectives and approach problems from new angles. By investing in training programs, workshops, and mentorship opportunities, managers can equip their teams with the tools and knowledge they need to think creatively and tackle complex challenges with confidence. Moreover, fostering collaboration across different departments and disciplines enables employees to leverage diverse perspectives and expertise, sparking new ideas and driving innovation forward.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Furthermore, managers should lead by example by demonstrating a willingness to embrace new ideas and challenge existing norms. This involves actively seeking out opportunities to innovate, encouraging experimentation, and supporting employees in their efforts to explore unconventional solutions. By modeling a mindset of curiosity, adaptability, and resilience, managers can inspire their teams to push boundaries and pursue innovative solutions to problems.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Ultimately, by empowering employees to unleash their creativity, managers can tap into the diverse talents and perspectives within their teams, driving innovation and driving organizational growth. By fostering a culture of psychological safety, providing opportunities for skill development and cross-functional collaboration, and leading by example, managers can create an environment where innovation thrives and employees feel empowered to make meaningful contributions to the organization's success.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+    </section><!-- End Empowering Section -->
+
+    <!-- ======= Conclusion Section ======= -->
+    <section id="conclusion" class="pricing">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Conclusion</h2>
+          <p>Continuous journey that requires ongoing commitment and effort</p>
+        </div>
+
+        <div class="row gy-4 gx-lg-5">
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Innovation is not a one-time event but a continuous journey that requires ongoing commitment and effort. By cultivating a culture of creativity within their organizations, managers can unleash the full potential of their teams and drive sustained innovation and growth.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Expanding on this, it's essential to recognize that innovation is not just about coming up with groundbreaking ideas; it's about creating an environment where those ideas can flourish. Managers play a pivotal role in shaping this environment by providing the necessary support and resources for experimentation, embracing failure as a learning opportunity, and empowering employees to think outside the box.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>By providing support for experimentation, managers demonstrate their commitment to fostering innovation and encourage their teams to explore new ideas and approaches. This involves allocating time, budget, and other resources for employees to test out their hypotheses and prototypes, knowing that some level of failure is inevitable but valuable in the pursuit of innovation.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Furthermore, by embracing failure as a learning opportunity, managers create a culture where employees feel empowered to take risks and learn from their mistakes. This shift in mindset encourages a culture of resilience and adaptability, where setbacks are viewed not as roadblocks but as stepping stones on the path to success.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>Additionally, by empowering employees to think outside the box, managers tap into the diverse talents and perspectives within their teams, driving innovation and propelling the organization to new heights of success. This involves fostering a culture of psychological safety, providing opportunities for skill development and cross-functional collaboration, and leading by example.</p>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <p>In summary, by cultivating a culture of creativity, providing support for experimentation, embracing failure as a learning opportunity, and empowering employees to think outside the box, managers can create an environment where innovation thrives and propels the organization to new heights of success. In doing so, they not only unlock the full potential of their teams but also drive sustained innovation and growth that sets their organization apart in today's dynamic business landscape.</p>
+             </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+    </section><!-- End Conclusion Section -->
+
+    <!-- ======= Author Section ======= -->
+    <section id="author" class="testimonials">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Author</h2>
+          <p>Amir Hamidi</p>
         </div>
 
         <div class="slides-3 swiper">
@@ -218,104 +393,86 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
                 <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  Thank you for your time. Lastly, I extend my gratitude to all my colleagues and professors who supported me in crafting this article.
+                </p>
+                <p>
+                  I dedicate this work to Mr. Saeed Dartomi.
                 </p>
                 <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
+                  <img src="{% static 'img/testimonials/testimonials.jpg' %}" class="testimonial-img" alt="Amir hamidi">
+                  <h3>Amir Hamidi</h3>
+                  <h4>Programmer</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
 
           </div>
-          <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section><!-- End Author Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+
+          <div class="col-lg-9">
+            <form action="{% url 'article:home' %}" method="post" role="form">
+              <div class="php-email-form">
+                <div class="row">
+                  {% csrf_token %}
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading
+                  </div>
+                  <div class="error-message">
+                  </div>
+                  <div class="sent-message">Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>PhotoFolio</span></strong>. All Rights Reserved
+        Developed by <a href="https://amirhamidi.pythonanywhere.com/">Amir Hamidi</a>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
@@ -328,14 +485,14 @@
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{% static 'js/main.js' %}"></script>
 
 </body>
 
